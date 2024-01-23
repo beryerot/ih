@@ -24,9 +24,10 @@ function init() {
         const clientX = e.touches ? e.touches[0].clientX : e.clientX;
         const clientY = e.touches ? e.touches[0].clientY : e.clientY;
 
-        context.lineWidth = 3;
+        context.lineWidth = 1;
         context.lineCap = 'round';
-        context.strokeStyle = '#000';
+        context.strokeStyle = '#ff0000';
+        context.globalAlpha = 0.7;
 
         context.lineTo(clientX - canvas.offsetLeft, clientY - canvas.offsetTop);
         context.stroke();
